@@ -1,0 +1,120 @@
+/* Reset básico */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  a {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  /* Container do cabeçalho */
+  .container.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
+    background-color: white;
+    color: rgb(0, 0, 0);
+  }
+  
+  .container.logo img {
+    width: 100px;
+  }
+  
+  /* Navegação principal */
+  .navegacao {
+    background-color: #333;
+    text-align: center;
+  }
+  
+  .navegacao ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+  }
+  
+  .navegacao a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .navegacao a:hover {
+    color: #00bfff;
+  }
+  
+  /* Barra de pesquisa */
+  .bar {
+    background-color: #f9f9fb;
+    padding: 15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .search input {
+    padding: 5px;
+    width: 200px;
+  }
+  
+  .search button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  /* Layout principal */
+  .content {
+    max-width: 1440px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: 15rem 1fr 15rem;
+    gap: 3rem;
+    padding: 2rem 1rem;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    border-right: solid 1px #cdcdcd;
+    padding-right: 1rem;
+  }
+  
+  .main {
+    grid-area: main;
+  }
+  
+  .anchors {
+    grid-area: anchors;
+    border-left: solid 1px #cdcdcd;
+    padding-left: 1rem;
+  }
+  
+  .banner img {
+    margin-bottom: 10px;
+  }
+  
+  /* Rodapé */
+  .footer {
+    min-height: 80px;
+    border-top: solid 1px #cdcdcd;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
